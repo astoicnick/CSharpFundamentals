@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0206D85D-B87C-4D4C-8600-0D28B61274E7}</ProjectGuid>
+    <ProjectGuid>{AC38A9C8-A218-4650-B47E-E4D7495C8DF3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_00_Challenges</RootNamespace>
-    <AssemblyName>00_Challenges</AssemblyName>
+    <RootNamespace>_07_Polymorphism_Tests</RootNamespace>
+    <AssemblyName>07_Polymorphism_Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,14 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerRepositoryTests.cs" />
-    <Compile Include="CustomerRepository.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="DayOneWhiteBoard.cs" />
+    <Compile Include="PolymorphismTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\07_Polymorphism_Classes\07_Polymorphism_Classes.csproj">
+      <Project>{E7C336CE-750F-456C-9D7A-7712706D2EFF}</Project>
+      <Name>07_Polymorphism_Classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
